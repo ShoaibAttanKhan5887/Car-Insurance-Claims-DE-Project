@@ -1,0 +1,19 @@
+id: fe7bce0c-2073-494d-a862-05874b2581cc
+pipeline_type: WORKSPACE
+name: Medallion Architecture Pipeline
+libraries:
+  - glob:
+      include: /Workspace/Users/codingshoaib26@gmail.com/Car-Insurance-Claims-DE-Project/CarInsurance_DAB/src/Pipelines/Medallion
+        Architecture Pipeline/transformations/**
+schema: 02_silver
+continuous: false
+development: false
+photon: true
+channel: CURRENT
+catalog: smart-claims-dev
+serverless: true
+root_path: /Workspace/Users/codingshoaib26@gmail.com/Car-Insurance-Claims-DE-Project/CarInsurance_DAB/src/Pipelines/Medallion
+  Architecture Pipeline
+environment:
+  dependencies:
+    - geopy==2.4.1
