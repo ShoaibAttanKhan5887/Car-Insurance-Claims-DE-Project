@@ -1,0 +1,16 @@
+id: f6c14eee-c777-4e8c-865b-62cdf7a73ec5
+pipeline_type: WORKSPACE
+name: Object(Images) Ingestion Pipeline
+libraries:
+  - glob:
+      include: ../../src/Pipelines/Images
+        Ingestion Pipeline/transformations/**
+schema: 01_bronze
+continuous: false
+development: false
+photon: true
+channel: CURRENT
+catalog: smart-claims-dev
+serverless: true
+root_path: ../../src/Pipelines/Images
+  Ingestion Pipeline

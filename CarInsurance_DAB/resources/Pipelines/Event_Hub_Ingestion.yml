@@ -1,0 +1,20 @@
+id: 9ac316c3-8089-4b5b-9d55-391397a4aaf2
+pipeline_type: WORKSPACE
+name: Event Hub Ingestion Pipeline
+configuration:
+  eh.namespace: evh-CarInsurance
+  eh.name: telematics-car-stream
+  eh.connectionString: ${EVENT_HUB_KEY}
+libraries:
+  - glob:
+      include: ../../src/Pipelines/Event
+        Hub Ingestion Pipeline/transformations/**
+schema: 01_bronze
+continuous: false
+development: false
+photon: true
+channel: CURRENT
+catalog: smart-claims-dev
+serverless: true
+root_path: ../../src/Pipelines/Event
+  Hub Ingestion Pipeline

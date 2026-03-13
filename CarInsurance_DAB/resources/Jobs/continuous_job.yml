@@ -1,0 +1,14 @@
+resources:
+  jobs:
+    Event_Hub_Ingestion_Continuous_Job:
+      name: Event Hub Ingestion Continuous Job
+      continuous:
+        pause_status: PAUSED
+        task_retry_mode: ON_FAILURE
+      tasks:
+        - task_key: EventHub_Ingestion_Continuous
+          pipeline_task:
+            pipeline_id: 9ac316c3-8089-4b5b-9d55-391397a4aaf2
+      queue:
+        enabled: true
+      performance_target: PERFORMANCE_OPTIMIZED
