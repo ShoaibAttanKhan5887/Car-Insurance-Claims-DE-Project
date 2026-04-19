@@ -12,7 +12,8 @@ This project establishes a unified data platform on Azure Databricks to create a
 
 ## Architecture & Data Flow
 The platform is built on a structured Databricks Medallion Architecture, moving data logically from ingestion to consumption.
-<img width="1344" height="756" alt="ProjectViz_Azure_Final" src="https://github.com/user-attachments/assets/8cadef52-4c4e-42af-ab86-ab7be5309036" />
+<img width="864" height="486" alt="Architecture CarInsurance" src="https://github.com/user-attachments/assets/fd182c08-ce35-48f5-9fa9-7d1021914490" />
+
 
 **1. Source Systems & Ingestion**
 *Relational Databases:* Customer and policy details are securely ingested using Lakeflow Connect.
