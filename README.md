@@ -35,6 +35,6 @@ The platform is built on a structured Databricks Medallion Architecture, moving 
 **Ingestion:** Auto Loader, Lakeflow Connect, Azure Event Hubs\
 **Storage:** Azure Data Lake Storage (Blob Storage)\
 **AI & Machine Learning:** Mosaic AI Serving, MLflow, Computer Vision\
-**Analytics & Serving:** Databricks SQL (DBSQL), AI/BI Dashboards\
+**Analytics & Serving:** Databricks SQL (DBSQL), AI/BI Dashboards
 
 
